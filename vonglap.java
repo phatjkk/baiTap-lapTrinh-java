@@ -5,7 +5,10 @@ import java.util.Scanner;
 public class ntphat {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int tinhnang,maxcp,n;
+		int tinhnang=0,maxcp,n;
+		do {
+			
+		
 		System.out.println("MENU CHUONG TRINH:");
 		System.out.println("1. In cac so chinh phuong tu 1->n");
 		System.out.println("2. In cac chu so của n");
@@ -60,7 +63,7 @@ public class ntphat {
 				if(tinhnang==2) {
 					sl2+=1;
 				}
-			}while(tinhnang==3);
+			}while(tinhnang!=3);
 			int tienthanhtoan=sl1*10000+sl2*5000;
 			System.out.println("TONG SO TIEN CUA BAN LA:" +tienthanhtoan);
 			System.out.println("Nhap so tien cua ban:");
@@ -73,8 +76,8 @@ public class ntphat {
 				System.out.println("++ THANH TOAN KHONG THANH CONG!! ++");
 				System.out.println("Ban con thieu:"+(tienthanhtoan-tienmua));
 			}
-			
-			
 		}
+		}while(tinhnang!=5);
 	}
+	
 }
